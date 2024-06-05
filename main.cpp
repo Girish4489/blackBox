@@ -1,8 +1,11 @@
+helo giri
+
 // Main Application Entry Point
 #include "./lib/sensor/sensor_manager.h"
 #include "./lib/data/data_logger.h"
 #include "./lib/communication/communication_manager.h"
 #include "./lib/hardwareAbstractionLayer/hal.h"
+
 
 int main(void)
 {
