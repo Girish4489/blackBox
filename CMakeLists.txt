@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.28.3)
 
 # Project name
-project(BlackBox)
+project(blackBox)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 11)
