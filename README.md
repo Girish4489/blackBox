@@ -74,29 +74,31 @@ git clone "https://github.com/Girish4489/blackBox.git"
 cd blackBox
 ```
 
-3. Create a build directory and change to it:
+3. Use the provided Makefile for convenience:
+
+*   **Setup:** `make setup` - Creates the build directory and runs CMake.
+*   **Build:** `make build` - Compiles the project.
+*   **Run:** `make run` - Executes the compiled application.
+*   **Clean:** `make clean` - Removes build artifacts.
+
+Alternatively, you can run the commands manually:
 
 ```bash
+# Setup
 mkdir build
 cd build
-```
-
-4. Run CMake to generate the build files:
-
-```bash
 cmake ..
-```
+cd ..
 
-5. Build the project using the following command:
-
-```bash
+# Build
+cd build
 make
-```
+cd ..
 
-6. Run the executable:
-
-```bash
-./blackBox
+# Run
+cd build
+./BlackBox
+cd ..
 ```
 
 ## Contributing
