@@ -38,7 +38,7 @@ The BlackBox system captures and stores the following data:
 
 The project is organized into several components, including sensor management, data logging, and communication interfaces. Each component is responsible for specific tasks, such as reading sensor data, logging it, and handling communication protocols.
 
-#### The project is organized into the following directories:
+#### The project is organized into the following directories
 
 ```file tree
 blackBox/
@@ -49,18 +49,22 @@ blackBox/
 │   ├── sensor/
 ├── main.cpp
 ├── CMakeLists.txt
+├── Makefile
+├── toolchain-mingw.cmake
 ├── LICENSE
 ```
 
 ## Installation and Running
 
-#### Prerequisites:
+#### Prerequisites
 
-- CMake
+- CMake (version 3.28.3 or higher)
 - C++ compiler
 - Make
+- GCC (for Linux builds)
+- MinGW (for Windows builds on Linux)
 
-#### To Clone and Run the Project, Follow these steps:
+#### To Clone and Run the Project, Follow these steps
 
 1. Clone the [repository](https://github.com/Girish4489/blackBox.git) using the following command in the terminal:
 
@@ -74,31 +78,26 @@ git clone "https://github.com/Girish4489/blackBox.git"
 cd blackBox
 ```
 
-3. Use the provided Makefile for convenience:
-
-*   **Setup:** `make setup` - Creates the build directory and runs CMake.
-*   **Build:** `make build` - Compiles the project.
-*   **Run:** `make run` - Executes the compiled application.
-*   **Clean:** `make clean` - Removes build artifacts.
-
-Alternatively, you can run the commands manually:
+3. Build the project using the following command:
 
 ```bash
-# Setup
-mkdir build
-cd build
-cmake ..
-cd ..
-
-# Build
-cd build
 make
-cd ..
+```
 
-# Run
-cd build
-./BlackBox
-cd ..
+4. Clean the build by make
+
+```bash
+make clean
+```
+
+5. Run the executable:
+
+```bash
+# for windows
+./bin/blackBox.exe
+
+# for linux
+./bin/blackbox.out
 ```
 
 ## Contributing
