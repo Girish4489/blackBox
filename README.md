@@ -58,11 +58,32 @@ blackBox/
 
 #### Prerequisites
 
-- CMake (version 3.28.3 or higher)
-- C++ compiler
-- Make
-- GCC (for Linux builds)
-- MinGW (for Windows builds on Linux)
+To build the project, you need the following tools installed:
+
+- **CMake** (version 3.28.3 or higher)
+- **Make**
+- **C++ Compiler** (GCC for Linux, MinGW-w64 for Windows cross-compilation on Linux)
+
+**Installation Guide:**
+
+*   **On Debian/Ubuntu-based systems (e.g., Ubuntu, Mint):**
+
+    ```bash
+    sudo apt-get update
+    sudo apt-get install cmake build-essential gcc g++
+    # For Windows cross-compilation:
+    sudo apt-get install gcc-mingw-w64 g++-mingw-w64
+    ```
+
+*   **On Fedora-based systems (e.g., Fedora, CentOS Stream):**
+
+    ```bash
+    sudo dnf install cmake make gcc gcc-c++
+    # For Windows cross-compilation:
+    sudo dnf install mingw64-gcc-c++
+    ```
+
+*   **Other Linux distributions:** Please refer to your distribution's documentation for installing `cmake`, `make`, `gcc`, `g++`, and `mingw-w64` packages.
 
 #### To Clone and Run the Project, Follow these steps
 
